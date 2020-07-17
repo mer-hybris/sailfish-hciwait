@@ -92,6 +92,6 @@ $(RELEASE_EXE): $(RELEASE_EXE_DEPS) $(RELEASE_OBJS)
 #
 install : $(RELEASE_EXE)
 	mkdir -p $(DESTDIR)/usr/sbin
-	mkdir -p $(DESTDIR)/lib/systemd/system
+	mkdir -p $(DESTDIR)/usr/lib/systemd/system
 	cp $(RELEASE_EXE) $(DESTDIR)/usr/sbin/
-	cp $(SRC_DIR)/sailfish-hciwait.service $(DESTDIR)/lib/systemd/system/
+	cp $(SRC_DIR)/sailfish-hciwait.service $(DESTDIR)/usr/lib/systemd/system/
