@@ -5,12 +5,12 @@ Summary: Sailfish hciwait service
 License: GPLv2
 URL: https://github.com/mer-hybris/sailfish-hciwait
 Source: %{name}-%{version}.tar.bz2
-Requires: bluez
-Requires: bluez-libs
+Requires: bluez5
+Requires: bluez5-libs
 BuildRequires: pkgconfig(glib-2.0)
-BuildRequires:  pkgconfig(dbus-1)
-BuildRequires: bluez-libs
-BuildRequires: bluez-libs-devel
+BuildRequires: pkgconfig(dbus-1)
+BuildRequires: bluez5-libs
+BuildRequires: bluez5-libs-devel
 BuildRequires: systemd
 Requires(post): /sbin/ldconfig
 Requires(postun): /sbin/ldconfig
